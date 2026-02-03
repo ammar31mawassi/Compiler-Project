@@ -1,0 +1,51 @@
+{
+	"name": "Scheme Compiler Development",
+	"image": "ocaml/opam:ubuntu-22.04-ocaml-4.14",
+	
+	"features": {
+		"ghcr.io/devcontainers/features/common-utils:2": {
+			"installZsh": true,
+			"installOhMyZsh": true,
+			"upgradePackages": true,
+			"username": "vscode",
+			"uid": "1000",
+			"gid": "1000"
+		}
+	},
+
+	"postCreateCommand": "sudo apt-get update && sudo apt-get install -y nasm gcc make build-essential && opam install -y ocamlfind",
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ocamllabs.ocaml-platform",
+				"ms-vscode.makefile-tools",
+				"xaver.clang-format"
+			],
+			"settings": {
+				"files.eol": "\n",
+				"editor.tabSize": 2,
+				"[ocaml]": {
+					"editor.tabSize": 2,
+					"editor.insertSpaces": true
+				},
+				"[makefile]": {
+					"editor.tabSize": 8,
+					"editor.insertSpaces": false
+				}
+			}
+		}
+	},
+
+	"remoteUser": "opam",
+	"remoteEnv": {
+		"PATH": "${containerEnv:PATH}:/home/opam/.opam/default/bin",
+		"OPAMROOT": "/home/opam/.opam"
+	},
+
+	"mounts": [
+		"source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+	],
+
+	"workspaceFolder": "/workspace"
+}
