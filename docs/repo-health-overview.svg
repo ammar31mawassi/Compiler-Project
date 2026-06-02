@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">Compiler Project repo walkthrough</title>
+  <desc id="desc">A simple reviewer walkthrough diagram for Compiler Project.</desc>
+  <rect width="960" height="420" fill="#f7f9fc"/>
+  <rect x="40" y="40" width="880" height="340" rx="16" fill="#ffffff" stroke="#d8dee9"/>
+  <text x="80" y="98" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#172033">Compiler Project</text>
+  <text x="80" y="136" font-family="Arial, sans-serif" font-size="18" fill="#46546b">Recruiter-readable project walkthrough</text>
+  <rect x="80" y="180" width="230" height="110" rx="12" fill="#edf5ff" stroke="#b8d7ff"/>
+  <text x="105" y="222" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#17324d">1. Setup</text>
+  <text x="105" y="255" font-family="Arial, sans-serif" font-size="15" fill="#344761">Quick start and environment notes</text>
+  <rect x="365" y="180" width="230" height="110" rx="12" fill="#eefbf3" stroke="#bde8cb"/>
+  <text x="390" y="222" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#173f27">2. Inspect</text>
+  <text x="390" y="255" font-family="Arial, sans-serif" font-size="15" fill="#355243">compiler.ml | pc.ml | compiler</text>
+  <rect x="650" y="180" width="230" height="110" rx="12" fill="#fff7e8" stroke="#f3d19b"/>
+  <text x="675" y="222" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#5a3a00">3. Verify</text>
+  <text x="675" y="255" font-family="Arial, sans-serif" font-size="15" fill="#5b4a30">Test plan, docs, and screenshots</text>
+  <text x="80" y="340" font-family="Arial, sans-serif" font-size="17" fill="#46546b">OCaml | Assembly | Scheme | Compiler construction | Makefile</text>
+</svg>
